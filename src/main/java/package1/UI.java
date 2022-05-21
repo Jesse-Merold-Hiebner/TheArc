@@ -1,3 +1,5 @@
+package package1;
+
 import javax.swing.*;
 import java.awt.*;
 
@@ -11,9 +13,9 @@ public class UI {
     Font titleFont = new Font("Times New Roman", Font.PLAIN, 90);
     Font gameFont = new Font("Times New Roman", Font.PLAIN, 26);
 
-    public void createUI() {
+    public void createUI(Game.SelectionHandler sHandler) {
 
-        //Game window
+        //package1.Game window
         startWindow = new JFrame();
         startWindow.setSize(800, 600);
         startWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -32,11 +34,13 @@ public class UI {
         startButtonPanel = new JPanel();
         startButtonPanel.setBounds(300, 400, 200, 100);
         startButtonPanel.setBackground(Color.darkGray);
-        startButton = new JButton("NEW GAME");
+        startButton = new JButton("New Game");
         startButton.setBackground(Color.darkGray);
         startButton.setForeground(Color.white);
         startButton.setFont(gameFont);
         startButton.setFocusPainted(false);
+        startButton.addActionListener(sHandler);
+        startButton.setActionCommand("New Game");
         startButtonPanel.add(startButton);
 
         loadButtonPanel = new JPanel();
@@ -61,34 +65,43 @@ public class UI {
         storyTitleLabel.setForeground(Color.white);
         storyTitleLabel.setFont(gameFont);
         storyTitlePanel.add(storyTitleLabel);
+        startWindow.add(storyTitlePanel);
 
         storyButtonPanel = new JPanel();
         storyButtonPanel.setBounds(250, 350, 300, 150);
         storyButtonPanel.setBackground(Color.black);
         storyButtonPanel.setLayout(new GridLayout(3, 1));
 
-        storySelection1 = new JButton("PUT NAME OF STORY 1 HERE");
+
+        storySelection1 = new JButton("Story1");
         storySelection1.setBackground(Color.darkGray);
         storySelection1.setForeground(Color.white);
         storySelection1.setFont(gameFont);
         storySelection1.setFocusPainted(false);
+        storySelection1.addActionListener(sHandler);
+        storySelection1.setActionCommand("Story1");
         storyButtonPanel.add(storySelection1);
 
-        storySelection2 = new JButton("PUT NAME OF STORY 2 HERE");
+        storySelection2 = new JButton("Story2");
         storySelection2.setBackground(Color.darkGray);
         storySelection2.setForeground(Color.white);
         storySelection2.setFont(gameFont);
         storySelection2.setFocusPainted(false);
+        storySelection2.addActionListener(sHandler);
+        storySelection2.setActionCommand("Story2");
         storyButtonPanel.add(storySelection2);
 
-        storySelection3 = new JButton("PUT NAME OF STORY 3 HERE");
+        storySelection3 = new JButton("Story3");
         storySelection3.setBackground(Color.darkGray);
         storySelection3.setForeground(Color.white);
         storySelection3.setFont(gameFont);
         storySelection3.setFocusPainted(false);
+        storySelection3.addActionListener(sHandler);
+        storySelection3.setActionCommand("Story3");
         storyButtonPanel.add(storySelection3);
+        startWindow.add(storyButtonPanel);
 
-        //Game Screen
+        //package1.Game Screen
         mainTextPanel = new JPanel();
         mainTextPanel.setBounds(100, 100, 600, 250);
         mainTextPanel.setBackground(Color.black);
@@ -115,6 +128,8 @@ public class UI {
         selection1.setForeground(Color.white);
         selection1.setFont(gameFont);
         selection1.setFocusPainted(false);
+        selection1.addActionListener(sHandler);
+        selection1.setActionCommand("s1");
         selectionButtonPanel.add(selection1);
 
         selection2 = new JButton("s2");
@@ -122,6 +137,8 @@ public class UI {
         selection2.setForeground(Color.white);
         selection2.setFont(gameFont);
         selection2.setFocusPainted(false);
+        selection2.addActionListener(sHandler);
+        selection2.setActionCommand("s2");
         selectionButtonPanel.add(selection2);
 
         selection3 = new JButton("s3");
@@ -129,6 +146,8 @@ public class UI {
         selection3.setForeground(Color.white);
         selection3.setFont(gameFont);
         selection3.setFocusPainted(false);
+        selection3.addActionListener(sHandler);
+        selection3.setActionCommand("s3");
         selectionButtonPanel.add(selection3);
 
         selection4 = new JButton("s4");
@@ -136,6 +155,8 @@ public class UI {
         selection4.setForeground(Color.white);
         selection4.setFont(gameFont);
         selection4.setFocusPainted(false);
+        selection4.addActionListener(sHandler);
+        selection4.setActionCommand("s4");
         selectionButtonPanel.add(selection4);
 
         playerPanel = new JPanel();
