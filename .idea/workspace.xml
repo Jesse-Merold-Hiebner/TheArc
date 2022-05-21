@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cbde0ca2-5484-4426-bae6-0df65202d3de" name="Changes" comment="&quot;Updated .gitignore file&quot;">
-      <change afterPath="$PROJECT_DIR$/../.idea/PRT362S.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/package1/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/package1/VisibilityManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Game.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/package1/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Game.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UI.class" beforeDir="false" />
-    </list>
+    <list default="true" id="cbde0ca2-5484-4426-bae6-0df65202d3de" name="Changes" comment="Modified directory and created new package. &#10;Created VisibilityManager.java&#10;&#10;- Added methods &#10;  - showLandingScreen()&#10;  - toStorySelection()&#10;&#10;- Modified Game.java&#10;  - added methods&#10;    - switch statement" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,7 +60,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1653064338156</updated>
-      <workItem from="1653148522759" duration="5594000" />
+      <workItem from="1653148522759" duration="6150000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Updated .gitignore file&quot;">
       <created>1653145068711</created>
@@ -80,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653145068711</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Modified directory and created new package. &#10;Created VisibilityManager.java&#10;&#10;- Added methods &#10;  - showLandingScreen()&#10;  - toStorySelection()&#10;&#10;- Modified Game.java&#10;  - added methods&#10;    - switch statement">
+      <created>1653154792743</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653154792743</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -99,6 +95,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;Updated .gitignore file&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Updated .gitignore file&quot;" />
+    <MESSAGE value="Modified directory and created new package. &#10;Created VisibilityManager.java&#10;&#10;- Added methods &#10;  - showLandingScreen()&#10;  - toStorySelection()&#10;&#10;- Modified Game.java&#10;  - added methods&#10;    - switch statement" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified directory and created new package. &#10;Created VisibilityManager.java&#10;&#10;- Added methods &#10;  - showLandingScreen()&#10;  - toStorySelection()&#10;&#10;- Modified Game.java&#10;  - added methods&#10;    - switch statement" />
   </component>
 </project>
