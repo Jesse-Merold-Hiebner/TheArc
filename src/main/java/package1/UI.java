@@ -3,7 +3,8 @@ package package1;
 import javax.swing.*;
 import java.awt.*;
 
-public class UI {
+public class UI
+{
 
     JFrame startWindow;
     JPanel gameTitlePanel, startButtonPanel, loadButtonPanel, mainTextPanel, selectionButtonPanel, playerPanel,storyTitlePanel,storyButtonPanel;
@@ -13,7 +14,8 @@ public class UI {
     Font titleFont = new Font("Times New Roman", Font.PLAIN, 90);
     Font gameFont = new Font("Times New Roman", Font.PLAIN, 26);
 
-    public void createUI(Game.SelectionHandler sHandler) {
+    public void createUI(Game.SelectionHandler sHandler)
+    {
 
         //package1.Game window
         startWindow = new JFrame();
@@ -21,6 +23,7 @@ public class UI {
         startWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         startWindow.getContentPane().setBackground(Color.black);
         startWindow.setLayout(null);
+
 
         //Landing Screen
         gameTitlePanel = new JPanel();
@@ -73,13 +76,13 @@ public class UI {
         storyButtonPanel.setLayout(new GridLayout(3, 1));
 
 
-        storySelection1 = new JButton("Story1");
+        storySelection1 = new JButton("Journey through Celestia");
         storySelection1.setBackground(Color.darkGray);
         storySelection1.setForeground(Color.white);
         storySelection1.setFont(gameFont);
         storySelection1.setFocusPainted(false);
         storySelection1.addActionListener(sHandler);
-        storySelection1.setActionCommand("Story1");
+        storySelection1.setActionCommand("Journey through Celestia");
         storyButtonPanel.add(storySelection1);
 
         storySelection2 = new JButton("Story2");
@@ -183,9 +186,10 @@ public class UI {
         weaponNameLabel.setForeground(Color.white);
         weaponNameLabel.setFont(gameFont);
         playerPanel.add(weaponNameLabel);
-
+        startWindow.add(playerPanel);
         //Login Screen
 
         startWindow.setVisible(true);
+
     }
 }
