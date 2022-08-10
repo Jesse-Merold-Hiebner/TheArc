@@ -75,4 +75,20 @@ public class VisibilityManager {
         gui.playerPanel.setVisible(true);
 
     }
+
+    public void toScarletsAdventures()
+    {
+
+        gui.gameTitlePanel.setVisible(false);
+        gui.startButtonPanel.setVisible(false);
+        gui.loadButtonPanel.setVisible(false);
+        gui.storyTitlePanel.setVisible(false);
+        gui.storyButtonPanel.setVisible(false);
+
+        // Show the game screen
+        gui.mainTextPanel.setVisible(true);
+        gui.selectionButtonPanel.setVisible(true);
+        gui.playerPanel.setVisible(true);
+
+    }
 }
