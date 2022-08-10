@@ -44,7 +44,7 @@ public class Game {
                         {
                 case "New Game": vm.toStorySelection(); break;
                 case "Journey through Celestia": vm.toCelestiaStoryBeginning(); break;
-                case "Story2": break;
+                case "Scarlets Adventures": vm.toScarletsAdventures();
                 case "Story3": break;
 
                 case "s1": break;
