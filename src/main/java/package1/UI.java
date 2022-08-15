@@ -85,13 +85,13 @@ public class UI
         storySelection1.setActionCommand("Journey through Celestia");
         storyButtonPanel.add(storySelection1);
 
-        storySelection2 = new JButton("Story2");
+        storySelection2 = new JButton("Heroin in the Making");
         storySelection2.setBackground(Color.darkGray);
         storySelection2.setForeground(Color.white);
         storySelection2.setFont(gameFont);
         storySelection2.setFocusPainted(false);
         storySelection2.addActionListener(sHandler);
-        storySelection2.setActionCommand("Story2");
+        storySelection2.setActionCommand("Heroin in the Making");
         storyButtonPanel.add(storySelection2);
 
         storySelection3 = new JButton("Story3");
